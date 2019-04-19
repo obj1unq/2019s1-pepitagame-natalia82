@@ -23,6 +23,9 @@ program PepitaGame {
 
 	keyboard.v().onPressDo { pepita.volaHacia(villaGesell) }
 	keyboard.b().onPressDo { pepita.volaHacia(buenosAires) }
+	
+	keyboard.m().onPressDo { pepita.volaYCome(manzana.position(), manzana)}
+	keyboard.a().onPressDo { pepita.volaYCome(alpiste.position(), alpiste)}
 
 	keyboard.up().onPressDo { pepita.move(pepita.position().up(1)) }
 	keyboard.down().onPressDo { pepita.move(pepita.position().down(1)) }
